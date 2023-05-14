@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green_primary">#607D3B</color>
+    <color name="green_primary_bottom">#8AB356</color>
+    <color name="green_dark">#30401D</color>
+    <color name="green_light">#8C936C</color>
+    <color name="orange_primary">#FFA500</color>
+    <color name="orange_dark">#B64F00</color>
+    <color name="orange_light">#FFC04C</color>
+    <color name="accent">#E91E63</color>
+    <color name="black">#FF000000</color>
+    <color name="review_text_color">#777676</color>
+    <color name="grey">#5E5E5E</color>
+    <color name="grey_light">#CCCCCC</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Bottom Navigation -->
+    <color name="colorPrimary">@color/orange_dark</color>
+    <color name="colorOnSurface">@color/green_dark</color>
+
+    <color name="cardBackgroundColor">#D4E8A5</color>
+</resources>

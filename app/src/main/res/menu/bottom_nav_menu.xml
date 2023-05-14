@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_news"
+        android:icon="@drawable/newspaper"
+        android:title="Новости" />
+    <item
+        android:id="@+id/nav_exhibits"
+        android:icon="@drawable/bank_outline"
+        android:title="Экспонаты" />
+    <item
+        android:id="@+id/nav_ar"
+        android:icon="@drawable/cube_scan"
+        android:title="AR" />
+    <item
+        android:id="@+id/reviewListFragment"
+        android:icon="@drawable/message_draw"
+        android:title="Отзывы" />
+    <item
+        android:id="@+id/nav_old_menu"
+        android:icon="@drawable/menu"
+        android:title="Меню" />
+</menu>

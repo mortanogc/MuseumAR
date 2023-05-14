@@ -1,0 +1,49 @@
+com.example.museumar
+├── model
+│   ├── Exhibit.java
+│   ├── News.java
+│   └── Review.java
+├── ui
+│   ├── home
+│   │   └── HomeFragment.java
+│   ├── news
+│   │   └── NewsListFragment.java
+│   ├── exhibits
+│   │   └── ExhibitListFragment.java
+│   │   └── ExhibitAdapter.java
+│   │   └── ExhibitDetailsFragment.java
+│   ├── map
+│   │   └── MuseumMapFragment.java
+│   ├── reviews
+│   │   └── ReviewListFragment.java
+│   │   └── ReviewAdapter.java
+│   │   └── AddReviewFragment.java
+│   ├── ar
+│   │   ├── ARListFragment.java
+│   │   └── ARViewFragment.java
+│   ├── about
+│   │   ├── MuseumInfoFragment.java
+│   │   └── AppInfoFragment.java
+│   └── MainActivity.java
+└── res
+    ├── layout
+    │   ├── activity_main.xml
+    │   ├── content_main.xml
+    │   ├── nav_header_main.xml
+    │   ├── fragment_home.xml
+    │   ├── fragment_news_list.xml
+    │   ├── fragment_exhibit_list.xml
+    │   ├── fragment_exhibit_details.xml
+    │   ├── fragment_museum_map.xml
+    │   ├── fragment_review_list.xml
+    │   ├── fragment_add_review.xml
+    │   ├── fragment_ar_list.xml
+    │   ├── fragment_ar_view.xml
+    │   ├── fragment_museum_info.xml
+    │   └── fragment_app_info.xml
+    │   └── item_review.xml
+    ├── navigation
+    │   └── nav_graph.xml
+    └── values
+        ├── strings.xml
+        └── themes.xml

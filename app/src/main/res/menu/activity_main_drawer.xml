@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Начало" />
+        <item
+            android:id="@+id/nav_map"
+            android:title="Карта музея" />
+        <item
+            android:id="@+id/nav_about_museum"
+            android:title="О музее" />
+        <item
+            android:id="@+id/nav_about_app"
+            android:title="О приложении" />
+    </group>
+</menu>
+
+

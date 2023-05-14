@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_news">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.museumar.ui.home.HomeFragment"
+        android:label="Начало"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_news"
+        android:name="com.example.museumar.ui.news.NewsListFragment"
+        android:label="Новости Музея"
+        tools:layout="@layout/fragment_news_list" />
+
+    <fragment
+        android:id="@+id/nav_map"
+        android:name="com.example.museumar.ui.map.MuseumMapFragment"
+        android:label="Карта Музейного Комплекса"
+        tools:layout="@layout/fragment_museum_map" />
+
+    <fragment
+        android:id="@+id/nav_ar"
+        android:name="com.example.museumar.ui.ar.ARListFragment"
+        android:label="menu_ar"
+        tools:layout="@layout/fragment_ar_list" >
+    <action
+        android:id="@+id/action_arListFragment_to_exhibitDetailsFragment"
+        app:destination="@+id/exhibitDetailsFragment">
+        <argument
+            android:name="exhibitId"
+            app:argType="string" />
+    </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_about_museum"
+        android:name="com.example.museumar.ui.about.MuseumInfoFragment"
+        android:label="О Нашем Музее"
+        tools:layout="@layout/fragment_museum_info" />
+
+    <fragment
+        android:id="@+id/nav_about_app"
+        android:name="com.example.museumar.ui.about.AppInfoFragment"
+        android:label="О Приложении"
+        tools:layout="@layout/fragment_app_info" />
+
+    <fragment
+        android:id="@+id/nav_exhibits"
+        android:name="com.example.museumar.ui.exhibits.ExhibitsListFragment"
+        android:label="Список Экспонатов Музея"
+        tools:layout="@layout/fragment_exhibit_list">
+        <action
+            android:id="@+id/action_exhibitsListFragment_to_exhibitDetailsFragment"
+            app:destination="@+id/exhibitDetailsFragment">
+            <argument
+                android:name="exhibitId"
+                app:argType="string" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/exhibitDetailsFragment"
+        android:name="com.example.museumar.ui.exhibits.ExhibitDetailsFragment"
+        android:label="Об Экспонате"
+        tools:layout="@layout/fragment_exhibit_details">
+        <argument
+            android:name="exhibitId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addReviewFragment"
+        android:name="com.example.museumar.ui.reviews.AddReviewFragment"
+        android:label="AddReviewFragment">
+        <action
+            android:id="@+id/action_addReviewFragment_to_reviewListFragment"
+            app:destination="@id/reviewListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/reviewListFragment"
+        android:name="com.example.museumar.ui.reviews.ReviewListFragment"
+        android:label="ReviewListFragment">
+        <action
+            android:id="@+id/action_reviewListFragment_to_addReviewFragment"
+            app:destination="@id/addReviewFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fullscreenImageFragment"
+        android:name="com.example.museumar.ui.fullscreenImage.FullscreenImageFragment"
+        android:label="FullscreenImageFragment">
+        <argument
+            android:name="imageUrl"
+            app:argType="string" />
+    </fragment>
+</navigation>
